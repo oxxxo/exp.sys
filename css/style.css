@@ -273,7 +273,7 @@ pre {
 }
 #fh5co-main-nav ul > li > a:hover, #fh5co-main-nav ul > li > a:active, #fh5co-main-nav ul > li > a:focus {
   color: #7c7c7c;
-      border-bottom: 3.5px solid rgb(255, 193, 7)!important;
+      border-bottom: 3.5px solid #efefef!important;
 }
 #fh5co-main-nav .fh5co-nav-call-to-action {
   position: absolute;
