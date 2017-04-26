@@ -245,6 +245,7 @@ pre {
   list-style: none;
   display: inline-block;
   background: #efefef;
+  border-radius: 5px;
 }
 #fh5co-main-nav ul > li.fh5co-active a {
   color: #7c7c7c;
