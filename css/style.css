@@ -43,7 +43,7 @@ a {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #1d2dfd;
+  color: #7c7c7c;
   border-bottom: 2px solid transparent;
 }
 a:hover, a:active, a:focus {
