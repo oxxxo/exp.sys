@@ -250,7 +250,7 @@ pre {
 }
 #fh5co-main-nav ul > li.fh5co-active a {
   color: #7c7c7c;
-  border-bottom: 2px solid #1d2dfd;
+  border-bottom: 3.5px solid rgb(255, 193, 7)!important;
 }
 #fh5co-main-nav ul > li:last-child {
   margin: 0;
