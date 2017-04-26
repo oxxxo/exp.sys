@@ -187,6 +187,7 @@ pre {
 #fh5co-header {
   margin-top: 5em;
   margin-bottom: 5em;
+  background: #fbfbfb;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
