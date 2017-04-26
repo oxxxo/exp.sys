@@ -281,8 +281,8 @@ pre {
    right: 0;
    top: 0;
    text-align: right;
-      background: #efefef;
-    border-radius: 5px;
+    background: #fff;
+    border-radius: 6px;
     padding: 0px 7px 0px 7px;
 }
 @media screen and (max-width: 768px) {
