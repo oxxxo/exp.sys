@@ -277,6 +277,10 @@ pre {
       border-bottom: 3.5px solid #efefef!important;
 }
 #fh5co-main-nav .fh5co-nav-call-to-action {
+    position: absolute;
+   right: 0;
+   top: 0;
+   text-align: right;
       background: #efefef;
     border-radius: 5px;
     padding: 0px 7px 0px 7px;
