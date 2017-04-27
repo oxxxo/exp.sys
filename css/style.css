@@ -20,6 +20,7 @@ body {
   color: #7b7b7b;
   font-weight: 300;
   letter-spacing: .05em;
+  overflow: hidden;
 }
 
 ::-webkit-selection {
