@@ -40,7 +40,10 @@ iPad 3
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-/* Styles */
+#fh5co-main-nav ul > li {
+ position:relative;
+    left:11.5em;
+}
 }
 
 /* Large screens ----------- */
