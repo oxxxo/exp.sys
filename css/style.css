@@ -43,7 +43,9 @@ a {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #7c7c7c;
+  color: transparent;
+  background: #fbfbfb;
+  border-radius: 5px;
   border-bottom: 2px solid transparent;
 }
 a:hover, a:active, a:focus {
@@ -262,7 +264,7 @@ pre {
   }
 }
 #fh5co-main-nav ul > li > a {
-  padding: 0px 0;
+  padding: 5px 5px;
   margin: 0  10px;
   color: #7c7c7c;
   border-bottom: 2px solid transparent;
