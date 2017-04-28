@@ -82,6 +82,16 @@ div#fh5co-work {
     position: absolute;
     top: 10.7em;
 }
+    #lga {
+    width: 5em;
+    padding: 9px;
+    font-weight: 900;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #a2a2a2 55%, #ffffff 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 }
 
 /* iPhone 6 ----------- */
