@@ -250,7 +250,7 @@ pre {
   margin: 0 0 7px 0;
   list-style: none;
   display: inline-block;
-  background: #efefef;
+  background: transparent;
   border-radius: 5px;
 }
 #fh5co-main-nav ul > li.fh5co-active a {
