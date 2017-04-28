@@ -55,7 +55,7 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 a:hover {
-  color: #7b7b7b;
+  color: #fff;
   background:darkorange!important;
 }
 
