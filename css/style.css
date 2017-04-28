@@ -278,8 +278,8 @@ pre {
 }
 #fh5co-main-nav .fh5co-nav-call-to-action {
     position: absolute;
-   right: 0;
-   top: 0;
+       right: 30px;
+    top: 9.5px;
    text-align: right;
     background: #fff;
     border-radius: 6px;
