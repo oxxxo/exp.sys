@@ -312,15 +312,15 @@ void displayTitle(){
   textAlign(LEFT, TOP);
   fill(255, 255);
   textLeading(32);
-  text("Pendulum\nWave Effect", x, y);
+  text("", x, y);
   fill(255, 0);
-  text("Pendulum\nWave Effect", x+1, y);
+  text("", x+1, y);
   
   fill(255, 127);
   textSize(14);
-  text("by Steve Kranz, 2015", x, y+67);
+  text("", x, y+67);
   textSize(12);
-  text("stevecrayons@gmail.com",x, y+83 );
+  text("",x, y+83 );
 
 
 }
