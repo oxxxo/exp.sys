@@ -360,6 +360,7 @@ pre {
   right: 20px;
   left: 20px;
   z-index: 55;
+  border-radius: 20px;
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-text {
   text-align: center;
