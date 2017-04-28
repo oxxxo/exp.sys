@@ -56,7 +56,7 @@ a:hover, a:active, a:focus {
 }
 a:hover {
   color: #7b7b7b;
-     border-bottom: 3.5px solid #efefef!important;
+  background:darkorange!important;
 }
 
 figure.fh5co-with-caption {
