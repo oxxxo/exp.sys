@@ -336,11 +336,13 @@ pre {
   float: left;
   width: 100%;
   border-bottom: none !important;
+      border-radius: 20px;
 }
 #fh5co-work .fh5co-work-item img {
   float: left;
   margin: 0;
   padding: 0;
+  border-radius: 20px;
 }
 #fh5co-work .fh5co-work-item:hover, #fh5co-work .fh5co-work-item:focus, #fh5co-work .fh5co-work-item:active {
   border-bottom: none !important;
