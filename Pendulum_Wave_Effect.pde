@@ -51,7 +51,7 @@ void setup(){
 
 
 void draw(){
-  background(40,40,45);
+  background(255,255,255);
 
   // Buttons...
    displayButtons();
