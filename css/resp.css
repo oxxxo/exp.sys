@@ -74,6 +74,10 @@ iPad 3
     top: 37px;
     right: 22px;
 }
+    a.js-fh5co-nav-toggle.fh5co-nav-toggle {
+    background: transparent;
+    box-shadow: none;
+}
 }
 
 /* iPhone 6 ----------- */
