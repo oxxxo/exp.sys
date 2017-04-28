@@ -351,7 +351,7 @@ pre {
   opacity: 0;
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-bg {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(45deg, #00ffa1, aqua);
   top: 20px;
   bottom: 20px;
   right: 20px;
