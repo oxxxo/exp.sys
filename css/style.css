@@ -266,7 +266,7 @@ pre {
 #fh5co-main-nav ul > li > a {
   padding: 5px 5px;
   margin: 0  10px;
-  color: #7c7c7c;
+  color: transparent;
   border-bottom: 2px solid transparent;
 }
 @media screen and (max-width: 768px) {
