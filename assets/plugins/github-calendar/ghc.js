@@ -35,7 +35,7 @@ function _typeof(e) {
     }({
         1: [function(e, t, n) {
             t.exports = function(e, t, n) {
-                return "string" == typeof e && (e = document.querySelector(e)), n = n || {}, n.summary_text = n.summary_text || 'Summary of pull requests, issues opened, and commits made by <a href="https://github.com/' + t + '" target="blank">@' + t + "</a>", n.proxy = n.proxy || function(e) {
+                return "string" == typeof e && (e = document.querySelector(e)), n = n || {}, n.summary_text = n.summary_text || 'суммарная сводка активности <a href="https://github.com/' + t + '" target="blank">@' + t + "</a>", n.proxy = n.proxy || function(e) {
                     return "https://urlreq.appspot.com/req?method=GET&url=" + e
                 }, fetch(n.proxy("https://github.com/" + t)).then(function(e) {
                     return e.text()
