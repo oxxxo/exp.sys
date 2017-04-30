@@ -302,6 +302,12 @@ iframe {
 h2.f4.text-normal.mb-2 {
     display: none;
 }
+.gha-header {
+display:none;
+}
+.gha-footer {
+display:none;
+}
 
 
 .experience .item {
