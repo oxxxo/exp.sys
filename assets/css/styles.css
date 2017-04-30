@@ -409,6 +409,7 @@ span.contrib-number {
 }
 .info li {
   margin-bottom: 15px;
+      color: #000;
 }
 .info li:last-child {
   margin-bottom: 0;
