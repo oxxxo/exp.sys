@@ -115,6 +115,8 @@ iframe {
 }
 */
 /* ======= Header ======= */
+img.img-responsive.project-image{border-radius:10px;}
+
 .header {
   padding: 30px 0;
   background: linear-gradient(45deg, #fcee21, #ed1c24);
