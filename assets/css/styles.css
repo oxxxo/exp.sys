@@ -295,6 +295,12 @@ iframe {
   color: #5f6b77;
 }
 /* Work Section */
+
+.float-left.text-gray {
+    display: none;
+}
+
+
 .experience .item {
   margin-bottom: 30px;
 }
