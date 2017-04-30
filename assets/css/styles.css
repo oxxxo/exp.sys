@@ -319,6 +319,7 @@ display:none;
 .calendar {
     background: #fff;
     border-radius: 10px;
+  border:0;
 }
 
 .skillset {
