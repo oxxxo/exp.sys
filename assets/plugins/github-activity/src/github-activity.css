@@ -281,5 +281,5 @@ span.gha-time {
 
 .gha-clear { clear: both; }
 .gha-muted { color: #666; }
-.gha-push  { height: 87px; }
+.gha-push  { height: 0px; }
 .gha-push-small  { height: 26px; }
