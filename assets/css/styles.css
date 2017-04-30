@@ -373,6 +373,9 @@ span.contrib-number {
     border-top: 1px solid #fc0;
 }
 
+.contrib-column.contrib-column-first.table-column {
+    border-left: 1px solid rgba(255, 204, 0, 0);}
+
 
 .github-graph {
   margin-bottom: 30px;
