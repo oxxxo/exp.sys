@@ -325,6 +325,12 @@ display:none;
     padding: 10px;
     border: 1px solid #e0e0e0;
 }
+.ava {float: right;
+    background: linear-gradient(45deg, #f79d23, #fff);
+    height: 95px;
+    width: 95px;
+    border-radius: 100px;
+    border: 2.3px solid #f5970c;}
 
 
 .experience .item {
