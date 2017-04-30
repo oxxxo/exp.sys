@@ -368,6 +368,12 @@ span.contrib-number {
   font-weight: normal;
 }
 /* Git section */
+.contrib-column.table-column {
+    border-left: 1px solid #fc0;
+    border-top: 1px solid #fc0;
+}
+
+
 .github-graph {
   margin-bottom: 30px;
 }
