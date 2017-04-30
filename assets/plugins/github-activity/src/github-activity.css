@@ -48,13 +48,13 @@
 .gha-feed small a .more-commits { font-size: 11px; }
 
 span.gha-time {
-  color: #bbb;
+  color: #FF5722;
   font-weight: normal; 
   font-size: 12px; 
 }
 
 .gha-feed a {
-  color: #4183c4;
+  color: #01ce09;
   text-decoration: none;
   font-weight: bold;
 }
