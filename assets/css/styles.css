@@ -558,3 +558,6 @@ display:none;
     width: 1360px;
   }
 }
+::-webkit-scrollbar {
+    width: 2.5px;
+}
