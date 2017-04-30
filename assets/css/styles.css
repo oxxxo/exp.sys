@@ -205,7 +205,7 @@ iframe {
   font-size: 12px;
 }
 .latest .item .title a {
-  color: #778492;
+  color: #fff;
 }
 .latest .item .title a:hover {
   color: #5f6b77;
@@ -227,7 +227,7 @@ iframe {
 }
 .latest .featured .summary {
   margin-bottom: 30px;
-  color: #778492;
+  color: #fff;
 }
 .latest .featured img {
   margin-bottom: 30px;
