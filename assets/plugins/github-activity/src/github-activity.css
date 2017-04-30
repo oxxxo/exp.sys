@@ -49,7 +49,7 @@
 .gha-feed small a .more-commits { font-size: 11px; }
 
 span.gha-time {
-  color: #FF5722;
+  color: red;
   font-weight: normal; 
   font-size: 12px; 
 }
