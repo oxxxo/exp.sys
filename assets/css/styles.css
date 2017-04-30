@@ -230,6 +230,7 @@ iframe {
 }
 .latest .featured img {
   margin-bottom: 30px;
+ border-radius: 10px;
 }
 .latest .featured .desc {
   margin-bottom: 30px;
