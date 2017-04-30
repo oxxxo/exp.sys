@@ -312,13 +312,17 @@ display:none;
 .gha-footer {
 display:none;
 }
+.calendar {
+    background: #fff;
+    border-radius: 10px;
+}
 
-/*.skillset {
+.skillset {
     background: #fff;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #e0e0e0;
-}*/
+}
 
 
 .experience .item {
