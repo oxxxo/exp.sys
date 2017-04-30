@@ -325,12 +325,19 @@ display:none;
     padding: 10px;
     border: 1px solid #e0e0e0;
 }
-.ava {float: right;
-    background: linear-gradient(45deg, #f79d23, #fff);
+.ava {    float: right;
+    background: linear-gradient(45deg, #CDDC39, #fff);
     height: 95px;
     width: 95px;
     border-radius: 100px;
-    border: 2.3px solid #f5970c;}
+    border: 7.3px solid #8BC34A;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 63%;}
+
+span.contrib-number {
+    color: #4CAF50;
+}
 
 
 .experience .item {
