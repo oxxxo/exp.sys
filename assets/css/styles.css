@@ -408,11 +408,12 @@ display:none;
 }
 .skills .skillset .level-bar {
   height: 15px;
-  background: #e8e8e8;
+  /*background: #e8e8e8;*/
 }
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #66cb8c;
+  background: linear-gradient(45deg, #ffff7e, #00a8c5);
+  border-radius: 5px;
 }
 /* Testimonials section */
 .testimonials .item {
