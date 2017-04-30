@@ -16,7 +16,7 @@
   font-family: Helvetica, arial, freesans, clean, sans-serif;
   line-height: 1.3;
   overflow-y: auto;
-  border: 1px solid #ddd;border-radius: 20px;
+  border: 1px solid #ddd;border-radius: 10px;
 }
 
 .gha-feed, .gha-feed h2, .gha-feed h3, .gha-feed p, .gha-feed ul, .gha-feed li {
