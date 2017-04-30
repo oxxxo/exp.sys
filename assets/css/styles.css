@@ -299,6 +299,9 @@ iframe {
 .float-left.text-gray {
     display: none;
 }
+h2.f4.text-normal.mb-2 {
+    display: none;
+}
 
 
 .experience .item {
