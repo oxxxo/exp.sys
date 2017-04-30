@@ -337,6 +337,7 @@ display:none;
 
 span.contrib-number {
     color: #4CAF50;
+  font-weight:900;
 }
 
 
@@ -367,6 +368,11 @@ span.contrib-number {
 .github-graph {
   margin-bottom: 30px;
 }
+.text-muted {
+    color: #9C27B0;
+    font-weight: 900;
+}
+
 .github-graph .js-calendar-graph-svg {
   max-width: 100%;
 }
