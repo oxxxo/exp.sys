@@ -473,11 +473,11 @@ span.contrib-number {
   font-weight: 500;
 }
 .testimonials .item .source .name {
-  color: #fff;
+  color: #000;
   font-weight: 600;
 }
 .testimonials .item .source .title {
-  color: #fff;
+  color: #000;
 }
 /* Education section */
 .education .item {
