@@ -270,6 +270,7 @@ img.img-responsive.project-image{border-radius:10px;box-shadow: 0 2px 2px 0 rgba
   -moz-transform: rotate(45deg) translate3d(0, 0, 0);
   -ms-transform: rotate(45deg) translate3d(0, 0, 0);
   -o-transform: rotate(45deg) translate3d(0, 0, 0);
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 .latest .featured-image .ribbon .text:before,
 .latest .featured-image .ribbon .text:after {
