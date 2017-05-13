@@ -68,8 +68,8 @@ a.btn-cta-primary,
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
-  background: #49ac43;
-  border: 1px solid #49ac43;
+      background: #000000;
+    border: 1px solid #9E9E9E;
   color: #fff;
 }
 a.btn-cta-secondary,
