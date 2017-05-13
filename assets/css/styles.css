@@ -346,7 +346,7 @@ display:none;
     top: 11px;}
 
 span.contrib-number {
-    color: #4CAF50;
+    color: #333;
   font-weight:900;
 }
 
@@ -388,7 +388,7 @@ span.contrib-number {
   margin-bottom: 30px;
 }
 .text-muted {
-    color: #9C27B0;
+    color: #777;
     font-weight: 900;
 }
 
