@@ -265,7 +265,7 @@ img.img-responsive.project-image{border-radius:10px;box-shadow: 0 2px 2px 0 rgba
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background: linear-gradient(45deg, #fcee21, #ed1c24);
+  background: linear-gradient(45deg, #9E9E9E, #000000);
   -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
   -moz-transform: rotate(45deg) translate3d(0, 0, 0);
   -ms-transform: rotate(45deg) translate3d(0, 0, 0);
