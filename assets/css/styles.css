@@ -332,10 +332,10 @@ display:none;
 }
 .ava {float: right;
     background-image: url(https://cepbep.github.io/images/ghs22.png);
-    background-size: 245px;
-    background-color: rgba(7, 255, 17, 0.23);
-    background-position-x: -64px;
-    background-position-y: -30px;
+    background-size: 260px;
+    background-color: rgb(253, 253, 253);
+    background-position-x: -72px;
+    background-position-y: -33px;
     height: 115px;
     width: 115px;
     border-radius: 100px;
