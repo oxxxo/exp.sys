@@ -19,7 +19,7 @@ body {
   top: 19.79vw;
   width: 10.42vw;
   height: 18.75vw;
-  background: radial-gradient(at center left at center left, #ffffff, rgba(0, 0, 0, 0) 75%);
+  background: radial-gradient(at center left at center left, rgba(158, 158, 158, 0.55), rgba(0, 0, 0, 0) 75%);
   background: -moz-radial-gradient(center left, white, transparent 75%);
   background: -webkit-radial-gradient(center left, white, transparent 75%);
   transform: rotate(-10deg);
@@ -33,11 +33,11 @@ body {
 }
 .container .lcd-light::before {
   border-bottom: 6.25vw solid transparent;
-  border-left: 10.42vw solid #ffb02f;
+  border-left: 10.42vw solid #fff;
 }
 .container .lcd-light::after {
   border-top: 3.65vw solid transparent;
-  border-left: 9.38vw solid #ffb02f;
+  border-left: 9.38vw solid #fff;
   bottom: 0;
 }
 .container .monitor {
@@ -192,7 +192,7 @@ body {
   animation: eyesMove 8s linear infinite;
 }
 .container .eyes::before, .container .eyes::after {
-  background: #dc1e1e;
+  background: #fff;
   border-radius: 50%;
   content: "";
   display: inline-block;
