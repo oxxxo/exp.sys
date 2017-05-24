@@ -1,0 +1,203 @@
+Begin Object Class=K2Node_Event Name="K2Node_Event_141"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_22716"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_22715"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_22714"
+   End Object
+   Begin Object Name="EdGraphPin_22716"
+      PinName="NewController"
+      PinToolTip="New Controller\nController Reference"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Controller')
+      LinkedTo(0)=EdGraphPin'K2Node_DynamicCast_475.EdGraphPin_32107'
+   End Object
+   Begin Object Name="EdGraphPin_22715"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_DynamicCast_475.EdGraphPin_32104'
+   End Object
+   Begin Object Name="EdGraphPin_22714"
+      PinName="OutputDelegate"
+      Direction=EGPD_Output
+      PinType=(PinCategory="delegate",PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Pawn',MemberName="ReceivePossessed"))
+   End Object
+   EventReference=(MemberParent=Class'/Script/Engine.Pawn',MemberName="ReceivePossessed")
+   bOverrideFunction=True
+   Pins(0)=EdGraphPin'EdGraphPin_22714'
+   Pins(1)=EdGraphPin'EdGraphPin_22715'
+   Pins(2)=EdGraphPin'EdGraphPin_22716'
+   NodePosY=160
+   NodeGuid=C12E67194BB6B858BB191ABA8097D2E5
+End Object
+Begin Object Class=K2Node_DynamicCast Name="K2Node_DynamicCast_475"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32109"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32108"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32107"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32106"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32105"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32104"
+   End Object
+   Begin Object Name="EdGraphPin_32109"
+      PinName="bSuccess"
+      Direction=EGPD_Output
+      PinType=(PinCategory="bool")
+      bHidden=True
+   End Object
+   Begin Object Name="EdGraphPin_32108"
+      PinName="AsAIS Player Controller"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C')
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_42.EdGraphPin_23263'
+   End Object
+   Begin Object Name="EdGraphPin_32107"
+      PinName="Object"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/CoreUObject.Object')
+      LinkedTo(0)=EdGraphPin'K2Node_Event_141.EdGraphPin_22716'
+   End Object
+   Begin Object Name="EdGraphPin_32106"
+      PinName="CastFailed"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+   End Object
+   Begin Object Name="EdGraphPin_32105"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_42.EdGraphPin_23261'
+   End Object
+   Begin Object Name="EdGraphPin_32104"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_Event_141.EdGraphPin_22715'
+   End Object
+   TargetType=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C'
+   Pins(0)=EdGraphPin'EdGraphPin_32104'
+   Pins(1)=EdGraphPin'EdGraphPin_32105'
+   Pins(2)=EdGraphPin'EdGraphPin_32106'
+   Pins(3)=EdGraphPin'EdGraphPin_32107'
+   Pins(4)=EdGraphPin'EdGraphPin_32108'
+   Pins(5)=EdGraphPin'EdGraphPin_32109'
+   NodePosX=240
+   NodePosY=160
+   NodeGuid=2DEF547C492E5E42F0DFA4974BEAA42F
+End Object
+Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_42"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_23265"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_23264"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_23263"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_23262"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_23261"
+   End Object
+   Begin Object Name="EdGraphPin_23265"
+      PinName="Output_Get"
+      PinToolTip="Retrieves the value of the variable, can use instead of a separate Get node"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C')
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_93.EdGraphPin_32126'
+   End Object
+   Begin Object Name="EdGraphPin_23264"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerPawn.AIS_PlayerPawn_C')
+      bHidden=True
+   End Object
+   Begin Object Name="EdGraphPin_23263"
+      PinName="StoredController"
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C')
+      LinkedTo(0)=EdGraphPin'K2Node_DynamicCast_475.EdGraphPin_32108'
+   End Object
+   Begin Object Name="EdGraphPin_23262"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_93.EdGraphPin_32122'
+   End Object
+   Begin Object Name="EdGraphPin_23261"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_DynamicCast_475.EdGraphPin_32105'
+   End Object
+   VariableReference=(MemberName="StoredController",bSelfContext=True)
+   Pins(0)=EdGraphPin'EdGraphPin_23261'
+   Pins(1)=EdGraphPin'EdGraphPin_23262'
+   Pins(2)=EdGraphPin'EdGraphPin_23263'
+   Pins(3)=EdGraphPin'EdGraphPin_23264'
+   Pins(4)=EdGraphPin'EdGraphPin_23265'
+   NodePosX=576
+   NodePosY=176
+   NodeGuid=52662D124808FD78038C048DD9810222
+End Object
+Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_93"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32126"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32125"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32124"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32123"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_32122"
+   End Object
+   Begin Object Name="EdGraphPin_32126"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C')
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_42.EdGraphPin_23265'
+   End Object
+   Begin Object Name="EdGraphPin_32125"
+      PinName="Output_Get"
+      PinToolTip="Retrieves the value of the variable, can use instead of a separate Get node"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerPawn.AIS_PlayerPawn_C')
+   End Object
+   Begin Object Name="EdGraphPin_32124"
+      PinName="StoredPawn"
+      PinType=(PinCategory="object",PinSubCategoryObject=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerPawn.AIS_PlayerPawn_C')
+      LinkedTo(0)=EdGraphPin'K2Node_Self_1.EdGraphPin_24288'
+   End Object
+   Begin Object Name="EdGraphPin_32123"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+   End Object
+   Begin Object Name="EdGraphPin_32122"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_42.EdGraphPin_23262'
+   End Object
+   VariableReference=(MemberParent=BlueprintGeneratedClass'/Game/AIStream/PlayerBlueprints/AIS_PlayerController.AIS_PlayerController_C',MemberName="StoredPawn",MemberGuid=6839E3594BB5845C7DA8D28D032C7C08)
+   SelfContextInfo=NotSelfContext
+   Pins(0)=EdGraphPin'EdGraphPin_32122'
+   Pins(1)=EdGraphPin'EdGraphPin_32123'
+   Pins(2)=EdGraphPin'EdGraphPin_32124'
+   Pins(3)=EdGraphPin'EdGraphPin_32125'
+   Pins(4)=EdGraphPin'EdGraphPin_32126'
+   NodePosX=880
+   NodePosY=176
+   NodeGuid=86708CBA4690D1AD6387DE8A60A0D8E7
+End Object
+Begin Object Class=K2Node_Self Name="K2Node_Self_1"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_24288"
+   End Object
+   Begin Object Name="EdGraphPin_24288"
+      PinName="self"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategory="self")
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_93.EdGraphPin_32124'
+   End Object
+   Pins(0)=EdGraphPin'EdGraphPin_24288'
+   NodePosX=624
+   NodePosY=256
+   NodeGuid=9DAA88D74E8CCEB9F5ECC7BE5D685741
+End Object
