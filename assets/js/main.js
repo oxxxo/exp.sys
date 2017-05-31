@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "https://xakep.ru/feed/",
+        "",
         
         {
         // how many entries do you want?
