@@ -1,0 +1,36 @@
+<html ><head><meta charset="UTF-8"><link rel="stylesheet" href="https://appvk.github.io/assets/speech/jquery/jquery.mobile-1.4.5.min.css"/>
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>AppVk</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" /><link rel="stylesheet" href="assets/css/style.css"></head>
+<body><a id="interface" href="https://goo.gl/ILiCbx"> <i class="fa fa-arrow-left" aria-hidden="true"></i></a><div class="container"><div class="header"></div><input id="speech"placeholder="-  " type="text" onkeypress="document.getElementById('spokenResponse').style.opacity = '1'"><button id="rec" class="btn"><i class="fa fa-microphone"></i></button>
+<div id="spokenResponse" class="spoken-response">
+<div id="a" class="spoken-response__text"></div>
+  </div>
+</div>
+  <script>function r() {
+    document.getElementById("a").innerHTML = "";
+}</script>
+  
+<!--<div class="debug">
+  <div class="debug__btn btn" style="border:0px; border-radius:20px;">
+   <i class="fa fa-code" aria-hidden="true"></i>
+  </div>
+  <div class="debug__content">
+    <textarea id="response" cols="40" rows="20" style="border-radius:25px;border:0px;
+    background-size: contain;"></textarea>
+  </div>
+</div>-->
+  <div class="debug" style="position:static;">
+  <div id="debtop" class="debug__btn btn" style="">
+  <img src="alfa.png" style="width:27%; height:30px;"/>
+  </div>
+  <div class="debug__content"><!--<iframe width="100%" height="500" src="https://goo.gl/7zp8q8" frameborder="0" allowfullscreen></iframe>--><iframe src="" id="myframe" frameborder="0"></iframe>
+
+    <textarea id="response" cols="40" rows="20" style="border-radius: 0vw 0vw 10vw 10vw; border: 0px; background-size: contain;"></textarea>
+  </div>
+</div>
+  <iframe width="100%" height="500" src="https://goo.gl/MVRbFb" frameborder="0" allowfullscreen></iframe><!--<iframe src="https://pro-to-tip.github.io/neon/index.html" style="position:absolute;width:100vw;height:50vh;top:5vw;
+    left: 0vw;z-index: -1;" frameborder="0" allowfullscreen=""></iframe>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--<script src="assets/js/index.js"></script>-->
+  <script src="assets/js/comp.js"></script>
+</body>
+</html>
