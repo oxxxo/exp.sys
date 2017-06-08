@@ -244,7 +244,7 @@ background:#d1d9e0;
 
 .container {
   position: fixed;
-  top:35%;
+  top:7%;
   left: 50%;
   -webkit-transition: all 0.45s ease-in;
   -webkit-transform: translate(-50%, -50%);
