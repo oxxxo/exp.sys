@@ -17,5 +17,5 @@ window.ChatraSetup = {
 };
 
    Chatra('setColors', {
-    chatBg: 'transparent'
+    chatBg: '#rgba(0, 188, 212, 0.33)'
 });
