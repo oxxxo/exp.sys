@@ -11,10 +11,10 @@ ChatraID = 'rh5rJer2fF3PaKHeb';
         n.parentNode.insertBefore(s, n);
     })(document, window, 'Chatra');
 
-window.ChatraSetup = {
-    mode: 'frame',
-    injectTo: 'bot' 
-};
+//window.ChatraSetup = {
+  //  mode: 'frame',
+    //injectTo: 'bot' 
+//};
 
    Chatra('setColors', {
     chatBg: 'rgba(0, 188, 212, 0.33)'
