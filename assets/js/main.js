@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     
-    $("#rss-feeds").rss(
+  //  $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
         "",
