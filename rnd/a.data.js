@@ -160,10 +160,10 @@ Module['FS_createPath']('/Engine', 'Build', true, true);
           for (i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_C:/Users/egor/Downloads/ArchVizDemo-master/ArchVizDemo-master/Binaries/HTML5/ArchVisDemo.data');
+              Module['removeRunDependency']('https://cdn.glitch.com/495968f8-8dc0-4a5d-a032-0833f082528b%2FArchVisDemo.data?1498124203741');
 
     };
-    Module['addRunDependency']('datafile_C:/Users/egor/Downloads/ArchVizDemo-master/ArchVizDemo-master/Binaries/HTML5/ArchVisDemo.data');
+    Module['addRunDependency']('https://cdn.glitch.com/495968f8-8dc0-4a5d-a032-0833f082528b%2FArchVisDemo.data?1498124203741');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
