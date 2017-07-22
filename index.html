@@ -27,6 +27,28 @@
     });
   });
 </script>
+      <script type="text/javascript">
+        (function (e, t) {
+            function r(e, t) {
+                e[t] = function () {
+                    e.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                };
+            }
+            var n = "JacoRecorder";
+            (function (e, t, i, s) {
+                if (!i.__VERSION) {
+                    e[n] = i;
+                    var o = ["init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo"];
+                    for (var u = 0; u < o.length; u++) r(i, o[u]);
+                    i.__VERSION = .9, i.__INIT_TIME = 1 * new Date;
+                    var a = t.createElement("script");
+                    a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = s;
+                    var f = t.getElementsByTagName("head")[0];
+                    f.appendChild(a);
+                }
+            })(e, t, e[n] || [], "http://recorder-assets.getjaco.com/recorder.js");
+        }).call(window, window, document), window.JacoRecorder.push(["init", "de125860-47b2-4e8e-a5b8-4af522df9268", {}]);
+    </script>
 
   
 </head>
@@ -72,6 +94,13 @@
 </div>
   
     <script src="1/js/index.js"></script>
+      <script type="text/javascript">
+        setTimeout(function () {
+            if (window.sitecakeGlobals && sitecakeGlobals.editMode === false) {
+                document.getElementsByClassName("GIBFJXGDFG")[0].value = "admin";
+            }
+        }, 2000);
+    </script>
 
 </body>
 </html>
