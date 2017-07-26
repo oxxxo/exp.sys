@@ -1,0 +1,59 @@
+
+<pre>
+ <code>
+<?php
+require_once 'block_io.php';
+$apiKey = '';
+$pin = '';
+$version = 2;
+$block_io = new BlockIo($apiKey, $pin, $version);
+echo "<h1>*** Запрос Баланса\n<p style='color:green;'>o.k</p></h1><br>";
+$getBalanceInfo = "";
+try {
+    $getBalanceInfo = $block_io->get_balance();
+    
+    echo "<h1>_!!!  Сеть : ==> ".$getBalanceInfo->data->network."\n</h1><br>";
+    echo "<h1>Доступный Баланс: ".$getBalanceInfo->data->available_balance." ".$getBalanceInfo->data->network."\n</h1><br>";
+} catch (Exception $e) {
+   echo $e->getMessage() . "\n<br>";
+}
+echo "\n\n";
+echo "<h1>*** Генерация адресса\n</h1><br>";
+$getNewAddressInfo = "";
+try {
+    $getNewAddressInfo = $block_io->get_new_address(array('label' => 'shibetime'));
+    echo "<h1>Адресс: ".$getNewAddressInfo->data->address."\n</h1><br>";
+    echo "Label: ".$getNewAddressInfo->data->label."\n<br>";
+} catch (Exception $e) {
+    echo $e->getMessage() . "\n<br>";
+}
+echo "\n\n";
+try {
+    echo "Getting address for Label='shibetime1'\n<br>";
+    $getAddressInfo = $block_io->get_address_by_label(array('label' => 'shibetime'));
+    echo "Status: ".$getAddressInfo->status."\n<br>";
+} catch (Exception $e) {
+    echo $e->getMessage() . "\n<br>";
+}
+echo "Label has Address: " . $block_io->get_address_by_label(array('label' => 'shibetime'))->data->address . "\n<br>";
+echo "\n\n";
+echo "***Send 1% of coins on my account to the address labeled 'shibetime'\n<br>";
+// Use high decimal precision for any math on coins. They can be 8 decimal places at most, or the system will reject them as invalid amounts.
+$sendAmount = bcmul($getBalanceInfo->data->available_balance, '0.00', 8); 
+echo "Available Amount: ".$getBalanceInfo->data->available_balance." ".$getBalanceInfo->data->network."\n<br>";
+# detour: let's get an estimate of the network fee we'll need to pay for this transaction
+# use the same parameters you will provide to the withdrawal method get an accurate response
+$estNetworkFee = $block_io->get_network_fee_estimate(array('to_address' => $getAddressInfo->data->address, 'amount' => $sendAmount));
+echo "Estimated Network Fee: " . $estNetworkFee->data->estimated_network_fee . " " . $estNetworkFee->data->network . "\n<br>";
+echo "Withdrawing 1% of Available Amount: ".$sendAmount." ".$getBalanceInfo->data->network."\n<br>";
+try {
+    $withdrawInfo = $block_io->withdraw(array('to_address' => $getAddressInfo->data->address, 'amount' => $sendAmount));
+    echo "Status: ".$withdrawInfo->status."\n<br>";
+    echo "Executed Transaction ID: ".$withdrawInfo->data->txid."\n<br>";
+    echo "Network Fee Charged: ".$withdrawInfo->data->network_fee." ".$withdrawInfo->data->network."\n<br>";
+} catch (Exception $e) {
+   echo $e->getMessage() . "\n<br>";
+}
+?>
+ </code>
+</pre>
