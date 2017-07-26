@@ -33,7 +33,8 @@ try {
     echo "Getting address for Label='shibetime1'\n<br>";
     $getAddressInfo = $block_io->get_address_by_label(array('label' => 'shibetime'));
     echo "Status: ".$getAddressInfo->status."\n<br>";
-} catch (Exception $e) {
+}
+catch (Exception $e) {
     echo $e->getMessage() . "\n<br>";
 }
 echo "Label has Address: " . $block_io->get_address_by_label(array('label' => 'shibetime'))->data->address . "\n<br>";
