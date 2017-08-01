@@ -68,3 +68,14 @@
   </code>
 </body>
 </html>
+
+<script>
+      node.files.add(new node.types.Buffer('Hello world!'), (err, res) => {
+      if (err || !res) {
+        return console.error('Error - ipfs files add', err, res)
+      }
+
+     res.forEach((file) => console.log('successfully stored', file)).innerHTML= "$file" 
+    })
+</script>
+<script> document.getElementById('h').innerHTML="хэш";</script><div id="h"></div>
