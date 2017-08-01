@@ -75,7 +75,8 @@
         return console.error('Error - ipfs files add', err, res)
       }
 
-     res.forEach((file) => console.log('successfully stored', file)).innerHTML= "$file" 
+     res.forEach((file) => console.log('successfully stored', file))
+      document.getElementById('h').innerHTML=(res);
     })
 </script>
 <div id="h"></div>
