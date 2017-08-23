@@ -1,0 +1,110 @@
+{
+  "particles": {
+    "number": {
+      "value": 1,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#2e93ff"
+    },
+    "shape": {
+      "type": "polygon",
+      "stroke": {
+        "width": 1,
+        "color": "#96c8ff"
+      },
+      "polygon": {
+        "nb_sides": 10
+      },
+      "image": {
+        "src": "https://raw.githubusercontent.com/CEPBEP/cepbep.github.io/master/app/13692.png",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.19240944730386272,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1.7053621458328247,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 40.08530152163807,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 12.181158184520175,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 897.9107540846928,
+      "color": "#2e93ff",
+      "opacity": 1,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2.5,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 353.2535873510851,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 381.6762897816322,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
