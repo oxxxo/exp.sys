@@ -4,6 +4,13 @@ body {
 .logo {
 
 }
+        #mynetwork {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+        }
+
 .logo img {
   width:120px;
 }
