@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Stats Counter Chart</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="aws-container aws-absolute">
+  <div class="aws-content">
+    <nav>
+      <div class="col-md-6 col-xs-6 col-sm-6">
+        <span data-btn-chart="webVisit" class="aws-active">
+          Web Visit
+        </span>
+      </div>
+      <div class="col-md-6 col-xs-6 col-sm-6">
+        <span data-btn-chart="fileDownload">
+          File Download
+        </span>
+      </div>
+    </nav>
+    <div class="aws-chart">
+      <canvas height="100"></canvas>
+    </div>
+  </div>
+  <div class="aws-details">
+    <div class="col-md-6 col-xs-6 col-sm-6">
+      <div class="aws-block-info">
+        <h3>
+          <span>&nbsp;</span>
+        </h3>
+        <h5>
+          <span>Total web visits (30 days)</span>
+        </h5>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-6 col-sm-6">
+      <div class="aws-block-info">
+        <h3>
+          <span>&nbsp;</span>%
+        </h3>
+        <h5>
+          <span>Growth vs previous 30 days</span>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="aws-tooltip">
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+  </div>
+</div>
+
+
+<div class="aws-author">
+  Made with <fa class="fa fa-heart"></fa> 
+  by <a target="_blank" href="http://depeloper.com/">Noval Agung Prayogo</a>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
