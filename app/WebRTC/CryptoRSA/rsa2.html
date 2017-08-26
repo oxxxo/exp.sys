@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>JavaScript RSA Cryptography Demo</title>
+  </head>
+
+<script language="JavaScript" type="text/javascript" src="jsbn.js"></script>
+<script language="JavaScript" type="text/javascript" src="rsa.js"></script>
+
+<script language="JavaScript">
+<!--
+
+function set_1024f4() {
+  document.rsatest.n.value="a5261939975948bb7a58dffe5ff54e65f0498f9175f5a09288810b8975871e99\naf3b5dd94057b0fc07535f5f97444504fa35169d461d0d30cf0192e307727c06\n5168c788771c561a9400fb49175e9e6aa4e23fe11af69e9412dd23b0cb6684c4\nc2429bce139e848ab26d0829073351f4acd36074eafd036a5eb83359d2a698d3";
+  document.rsatest.e.value="10001";
+  document.rsatest.d.value="8e9912f6d3645894e8d38cb58c0db81ff516cf4c7e5a14c7f1eddb1459d2cded\n4d8d293fc97aee6aefb861859c8b6a3d1dfe710463e1f9ddc72048c09751971c\n4a580aa51eb523357a3cc48d31cfad1d4a165066ed92d4748fb6571211da5cb1\n4bc11b6e2df7c1a559e6d5ac1cd5c94703a22891464fba23d0d965086277a161";
+  document.rsatest.p.value="d090ce58a92c75233a6486cb0a9209bf3583b64f540c76f5294bb97d285eed33\naec220bde14b2417951178ac152ceab6da7090905b478195498b352048f15e7d";
+  document.rsatest.q.value="cab575dc652bb66df15a0359609d51d1db184750c00c6698b90ef3465c996551\n03edbf0d54c56aec0ce3c4d22592338092a126a0cc49f65a4a30d222b411e58f";
+  document.rsatest.dmp1.value="1a24bca8e273df2f0e47c199bbf678604e7df7215480c77c8db39f49b000ce2c\nf7500038acfff5433b7d582a01f1826e6f4d42e1c57f5e1fef7b12aabc59fd25";
+  document.rsatest.dmq1.value="3d06982efbbe47339e1f6d36b1216b8a741d410b0c662f54f7118b27b9a4ec9d\n914337eb39841d8666f3034408cf94f5b62f11c402fc994fe15a05493150d9fd";
+  document.rsatest.coeff.value="3a3e731acd8960b7ff9eb81a7ff93bd1cfa74cbd56987db58b4594fb09c09084\ndb1734c8143f98b602b981aaa9243ca28deb69b5b280ee8dcee0fd2625e53250";
+}
+function do_status(s) {
+  document.rsatest.status.value = s;
+}
+function do_init() {
+  if(document.rsatest.n.value.length == 0) set_1024f4();
+}
+function do_encrypt() {
+  var before = new Date();
+  var rsa = new RSAKey();
+  rsa.setPublic(document.rsatest.n.value, document.rsatest.e.value);
+  var res = rsa.encrypt(document.rsatest.plaintext.value);
+  var after = new Date();
+  if(res) {
+    document.rsatest.ciphertext.value = linebrk(res, 64);
+    document.rsatest.decrypted.value = "";
+    do_status("Encryption Time: " + (after - before) + "ms");
+  }
+}
+function do_decrypt() {
+  do_status("Decrypting...");
+  var before = new Date();
+  var rsa = new RSAKey();
+  var dr = document.rsatest;
+  rsa.setPrivateEx(dr.n.value, dr.e.value, dr.d.value, dr.p.value, dr.q.value, dr.dmp1.value, dr.dmq1.value, dr.coeff.value);
+  if(document.rsatest.ciphertext.value.length == 0) {
+    do_status("No Ciphertext - encrypt something first");
+    return;
+  }
+  var res = rsa.decrypt(document.rsatest.ciphertext.value);
+  var after = new Date();
+  if(res == null) {
+    document.rsatest.decrypted.value = "*** Invalid Ciphertext ***";
+    do_status("Decryption failed");
+  }
+  else {
+    document.rsatest.decrypted.value = res;
+    do_status("Decryption Time: " + (after - before) + "ms");
+  }
+}
+function do_genrsa() {
+  var before = new Date();
+  var rsa = new RSAKey();
+  var dr = document.rsatest;
+  do_status("Generating RSA Key...");
+  console.log("Generating RSA Key...");
+  rsa.generate(parseInt(dr.bits.value),dr.e.value);
+  dr.n.value = rsa.n.toString(); // linebrk(rsa.n.toString(),64);
+  dr.d.value = rsa.d.toString(); // linebrk(rsa.d.toString(),64);
+  dr.p.value = rsa.p.toString(); // linebrk(rsa.p.toString(),64);
+  dr.q.value = rsa.q.toString(); // linebrk(rsa.q.toString(),64);
+  dr.dmp1.value = linebrk(rsa.dmp1.toString(),64);
+  dr.dmq1.value = linebrk(rsa.dmq1.toString(),64);
+  dr.coeff.value = linebrk(rsa.coeff.toString(),64);
+  var after = new Date();
+  do_status("Key Generation Time: " + (after - before) + "ms");
+}
+//-->
+</script>
+
+  <body onLoad='do_init();'>
+    <h1>JavaScript RSA Cryptography Demo</h1>
+
+<form name="rsatest" onSubmit='do_encrypt();return false;'>
+Plaintext (string):<br>
+<input name="plaintext" type="text" value="test" size=60><br>
+<input type="button" value="encrypt" onClick="do_encrypt();"><p>
+Ciphertext (hex):<br>
+<textarea name="ciphertext" rows=4 cols=70></textarea><br>
+<input type="button" value="decrypt" onClick="do_decrypt();"><p>
+Decrypted Plaintext (string):<br>
+<input name="decrypted" type="text" size=60><p>
+Status:<br>
+<input name="status" type="text" size=60><p>
+<hr>
+<h2>RSA private key</h2><p>
+<input type="button" value="1024 bit" onClick='set_1024f4();'>
+<input type="button" value="1024 bit (e=3)" onClick='set_1024e3();'>
+<input type="button" value="512 bit" onClick='set_512f4();'>
+<input type="button" value="512 bit (e=3)" onClick='set_512e3();'>
+&nbsp; <input type="button" value="Generate" onClick='do_genrsa();'>
+bits = <input name="bits" type="text" value="512" size=10>
+<p>
+Modulus (hex) (n: Modulo para las claves publica y privada):<br>
+<textarea name="n" type="text" rows=4 cols=70></textarea><p>
+Public exponent (hex, F4=0x10001): (e: exponente de la clave publica)<br>
+<input name="e" type="text" value="3" size=20><p>
+Private exponent (hex): (d: exponente de la clave privada)<br>
+<textarea name="d" type="text" rows=4 cols=70></textarea><p>
+P (hex):<br>
+<textarea name="p" type="text" rows=2 cols=70></textarea><p>
+Q (hex):<br>
+<textarea name="q" type="text" rows=2 cols=70></textarea><p>
+D mod (P-1) (hex):<br>
+<textarea name="dmp1" type="text" rows=2 cols=70></textarea><p>
+D mod (Q-1) (hex):<br>
+<textarea name="dmq1" type="text" rows=2 cols=70></textarea><p>
+1/Q mod P (hex):<br>
+<textarea name="coeff" type="text" rows=2 cols=70></textarea>
+</form>
+  </body>
+</html>

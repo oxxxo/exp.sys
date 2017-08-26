@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /awstats
+Disallow: /backup
+Disallow: /css
+Disallow: /works/*
+
+Host: 52.38.144.179

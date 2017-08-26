@@ -1,0 +1,108 @@
+#connections {
+	margin: auto;
+}
+
+#send h3 {
+	font-size: 0.875em;
+	font-weight: lighter;
+	padding: 1em 0 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+#msg {
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	display: block;
+	margin: 1.5em 0 0 0;
+	opacity: 0.75;
+	padding: 1em;
+	resize: none;
+	width: 100%;
+}
+
+#msg:hover {
+	opacity: 1;
+}
+
+#msg:focus {
+	opacity: 1;
+}
+
+.chat {
+	display: none;
+	margin: auto;
+	padding: 0 0 0.938em 0;
+}
+
+.chat, .messages {
+	color: #FCFCFC;
+	font-size: 1.063em;
+	margin: auto;
+	opacity: 0.8;
+}
+
+.date {
+	color: #FCFCFC;
+	float: right;
+	font-size: 0.875em;
+	opacity: 0.85;
+}
+
+.message {
+	font-size: 0.875em;
+	margin: 30px 0 0 0;
+	opacity: 0.75;
+}
+
+.message_block {
+	border-radius: 0.938em;
+	word-wrap: break-word;
+}
+
+.message_block, .notification {
+	padding: 10px;
+}
+
+.messages {
+	clear: both;
+	margin-bottom: 0.938em;
+	overflow: hidden;
+}
+
+.messages li {
+	clear: both;
+	list-style: none;
+	overflow: hidden;
+}
+
+.notification {
+	border-radius: 0.313em;
+	color: #ffffff;
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+.partner {
+	background: #29b664;
+	float: left;
+	margin: 0.313em 0.313em 0.313em 0;
+}
+
+.partner, .you {
+	font-size: 1em;
+	max-width: 90%;
+}
+
+.peer, .me {
+	color: #ffffff;
+	float: left;
+	padding: 0 30px 0 0;
+}
+
+.you {
+	background: #25a55b;
+	float: right;
+	margin: 0.313em 0 0.313em 0.313em;
+}

@@ -1,0 +1,101 @@
+@media screen and (min-width: 1001px) {
+	#connectbox #input_group {
+		padding: 6em;
+		width: 60%;
+	}
+
+	#connections {
+		width: 60%;
+	}
+
+	.chat {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#connectbox #input_group {
+		width: 90%;
+	}
+	
+	#connections {
+		width: 90%;
+	}
+
+	.chat {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 670px) {
+	#connectbox #input_group {
+		padding: 4em;
+	}
+
+	#connectbox input[type=submit] {
+		margin: 1.5em 0 0 0;
+	}
+
+	#info .column {
+		float: left;
+		text-align: center;
+		width: 33.33333%;
+	}
+
+	#info .column:nth-child(2n) {
+		border-left: 1px solid #283848;
+		border-right: 1px solid #283848;
+	}
+
+	#send h3 {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 669px) {
+	#connectbox #input_group {
+		padding: 1.5em 0.5em 1.5em 0.5em;
+	}
+
+	#connectbox input[type=submit]:nth-child(2n) {
+		float: inherit;
+	}
+
+	#connectbox input[type=submit] {
+		margin: 1.25em 0 0 0;
+	}
+
+	#info .column {
+		float: inherit;
+		text-align: justify;
+		width: 100%;
+	}
+
+	#info .column:nth-child(2n) {
+		border-bottom: 0.063em solid #283848;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0.063em solid #283848;
+	}
+
+	#send h3 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 454px) {
+	header nav ul li a {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 453px) {
+	header nav ul li a {
+		display: none;
+	}
+
+	header nav ul li:first-child {
+		text-align: center;
+		width: 100%;
+	}
+}

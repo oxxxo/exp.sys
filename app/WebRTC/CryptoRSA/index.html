@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Encriptación con RSA</title>
+  </head>
+
+<script language="JavaScript" type="text/javascript" src="jsbn.js"></script>
+<script language="JavaScript" type="text/javascript" src="HelpersUnsa.js"></script>
+<script language="JavaScript" type="text/javascript" src="RSAUnsa.js"></script>
+
+<script language="JavaScript">
+
+var split = null;
+var arrayString = null;
+var arrayNumber = null;
+var arrayEncrypted = null;
+
+function init(){
+  document.rsatest.e.value="65537";
+  generateRSA();
+}
+
+function do_status(s) {
+  document.rsatest.status.value = s;
+}
+function do_init() {
+  if(document.rsatest.n.value.length == 0) {init(); }
+}
+
+function encriptar(){
+  var before = new Date();
+  var rsa = new RSA();
+  console.log("Setting public key");
+  rsa.setPublicKey(document.rsatest.n.value, document.rsatest.e.value);
+  rsa.setPrivateKey(document.rsatest.n.value, document.rsatest.d.value);
+  console.log("Encrypting...");
+  var res = rsa.encrypt(document.rsatest.plaintext.value);
+  split = rsa.split;
+  arrayString = rsa.arrayString;
+  arrayNumber = rsa.arrayNumber;
+  arrayEncrypted = rsa.arrayEncrypted;
+
+  var after = new Date();
+  if(res) {
+    //document.rsatest.ciphertext.value = res;
+    document.rsatest.ciphertext.value = rsa.arrayEncrypted.join(",");
+    document.rsatest.decrypted.value = "";
+    do_status("Encryption Time: " + (after - before) + "ms");
+  } 
+}
+
+function desencriptar(){
+  do_status("Decrypting...");
+  var before = new Date();
+  var rsa = new RSA();
+  var dr = document.rsatest;
+  //rsa.setPrivateEx(dr.n.value, dr.e.value, dr.d.value, dr.p.value, dr.q.value, dr.dmp1.value, dr.dmq1.value, dr.coeff.value);
+  rsa.setPrivateKey(dr.n.value, dr.d.value);
+  if(document.rsatest.ciphertext.value.length == 0) {
+    do_status("No Ciphertext - encrypt something first");
+    return;
+  }
+  //var res = rsa.decrypt(document.rsatest.ciphertext.value);
+  var dataBigInt = document.rsatest.ciphertext.value.split(",");
+      for (var i = 0; i < dataBigInt.length; i++) {
+        dataBigInt[i] = new BigInteger(dataBigInt[i]);
+      }
+  var res = rsa.decrypt(dataBigInt);
+  var after = new Date();
+  if(res == null) {
+    document.rsatest.decrypted.value = "*** Invalid Ciphertext ***";
+    do_status("Decryption failed");
+  }
+  else {
+    document.rsatest.decrypted.value = res;
+    do_status("Decryption Time: " + (after - before) + "ms");
+  }
+}
+
+var generateRSA = function(){
+  var before = new Date();
+  var rsa = new RSA();
+  var dr = document.rsatest;
+  do_status("Generating RSA Key...");
+  console.log("Generating RSA Key...");
+  rsa.generateKeys(parseInt(dr.bits.value),dr.e.value);
+  dr.n.value = rsa.n.toString();
+  dr.d.value = rsa.d.toString();
+  dr.p.value = rsa.p.toString();
+  dr.q.value = rsa.q.toString();
+  var after = new Date();
+  do_status("Key Generation Time: " + (after - before) + "ms");
+}
+
+var showVariables = function(){
+  console.log()
+  console.log(arrayEncrypted);
+  console.log(split);
+  console.log(arrayNumber);
+  console.log(arrayString);
+}
+
+</script>
+
+  <body onLoad='do_init();'>
+    <h1>Encryptacion con RSA</h1>
+
+<form name="rsatest" onSubmit='encriptar();return false;'>
+Plaintext (string):<br>
+<textarea name="plaintext" type="text" value="test" cols=70></textarea>
+<!--<input name="plaintext" type="text" value="test" size=400><br>-->
+<input type="button" value="encrypt" onClick="encriptar();"><p>
+Ciphertext:<br>
+<textarea name="ciphertext" rows=7 cols=70></textarea><br>
+<input type="button" value="decrypt" onClick="desencriptar();"><p>
+Decrypted(string):<br>
+<input name="decrypted" type="text" size=400><p>
+<input type="button" value="show" onclick="showVariables();" name="show">
+Status:<br>
+<input name="status" type="text" size=60><p>
+<hr>
+<h2>RSA private key</h2><p>
+&nbsp; <input type="button" value="Generate" onClick='generateRSA();'>
+bits = <input name="bits" type="text" value="512" size=10>
+<p>
+Modulus (n: Modulo para las claves publica y privada):<br>
+<textarea name="n" type="text" rows=4 cols=70></textarea><p>
+Public exponent (e: exponente de la clave publica)<br>
+<input name="e" type="text" value="3" size=20><p>
+Private exponent (d: exponente de la clave privada)<br>
+<textarea name="d" type="text" rows=4 cols=70></textarea><p>
+P:<br>
+<textarea name="p" type="text" rows=2 cols=70></textarea><p>
+Q:<br>
+<textarea name="q" type="text" rows=2 cols=70></textarea><p>
+</form>
+  </body>
+</html>

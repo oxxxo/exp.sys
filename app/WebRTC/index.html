@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru" manifest="cache.manifest">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="#1d2935">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>EncryptedChat</title>
+		<meta name="Description" content="">
+		<link rel="stylesheet" href="css/chat.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/peer.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/jsbn.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/HelpersUnsa.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/RSAUnsa.js"></script>
+		
+		
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<!--<li><a href="/" id="logo"><img src="images/logo.png" alt="SecretChat"></a></li>-->
+					<li><a href="">Encripted Chat</a></li>
+					<li><a href="http://vk.com/secretchat" target="_blank" rel="noopener noreferrer">Comunidad</a></li>
+					<li><a href="mailto:jairfrancesco@gmail.com" target="_blank" rel="noopener noreferrer">Apoyo</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<div id="connectbox">
+				<div id="input_group">
+					<h2>Introduzca ID de su asociado y haga clic en el botón "Conectar". Si usted no tiene identificación, puede conseguirlo y compartirlo con otra persona.</h2>
+					<input type="text" id="another_id" class="partnerID" placeholder="ID de socio">
+					<input type="text" id="own_id" class="ownID" value="" placeholder="ID Generado" readonly="readonly" onclick="this.select();">
+					<input type="submit" id="connect" value="Conectar">
+				</div>
+				<div id="wrap">
+					<div id="connections">
+						<span class="filler"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="chat" id="chat">
+					<form id="send">
+						<textarea rows="3" id="msg" class="ctrlSubmit" placeholder="Introduzca su mensaje"></textarea>
+						<input type="submit" value="Enviar Mensaje" id="bumbum" style="float: inherit; width: 100%">
+						<h3>Presione Ctrl+Enter para enviar rapidamente</h3>
+					</form>
+				</div>
+			</div>
+			<div id="sourcecode">
+				<p>Encriptar Archivos. (la clave privada esta en la caja de texto de arriba (Separada por comas)</p>
+				<input type="file" />
+				<br>
+				<button type="button" id="encryptFile" style="float: inherit; width: 100%">Encriptar!</button>
+				<button type="button" id="decryptFile" style="float: inherit; width: 100%">Desencriptar!</button>
+			</div>
+			<div id="outputEncrypted">
+				
+			</div>
+		</div>
+
+		<script src="js/app.js"></script>
+		<script src="js/page.js"></script>
+
+		<script type="text/javascript">
+			function getUrlVars() {
+				var vars = [], hash;
+				var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+				for(var i = 0; i < hashes.length; i++) {
+					hash = hashes[i].split('=');
+					vars.push(hash[0]);
+					vars[hash[0]] = hash[1];
+				}
+				return vars;
+			}
+			var vars = getUrlVars();
+		</script>
+		<script type="text/javascript">
+			function startMessaging() {
+				$('#chat').show();
+				$('#wrap').show();
+				$('#input_group').hide();
+				$('#info').hide();
+			}
+			$(window).load(function() {
+				$('#connectbox').show();
+				$('#wrap').hide();
+				var t = document.getElementsByTagName('textarea');
+				var i = 0;
+				while(t[i]){
+					if(/ctrlSubmit/.test(t[i].className)){
+						t[i].onkeyup = function(e){
+							e = window.event || e;
+							if(e.keyCode == 13 && e.ctrlKey){
+								$('#send').trigger('submit');
+							}
+						}
+					}
+					++i;
+				}
+			});
+		</script>
+	</body>
+</html>

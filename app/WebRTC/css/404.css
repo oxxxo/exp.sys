@@ -1,0 +1,69 @@
+@import "http://webfonts.ru/import/robotocondensed.css";
+
+* {
+	-moz-box-sizing: border-box;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-transition: 0.3s;
+	-o-user-select: none;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: 0.3s;
+	-webkit-user-select: none;
+	border: 0;
+	box-sizing: border-box;
+	cursor: default;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	transition: 0.3s;
+	user-select: none;
+}
+
+html, body {
+	background-color: #27ad60;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 100%/1.5em;
+}
+
+section {
+	background-color: #283848;
+	display: block;
+	padding: 4em 0;
+	text-align: center;
+	z-index: 2;
+}
+
+p {
+	bottom: 0;
+	color: #333333;
+	font-size: 5em;
+	left: 0;
+	opacity: 0.05;
+	position: fixed;
+	right: 0;
+	transform: rotate(-25deg);
+	top: 0;
+	z-index: -1;
+}
+
+a {
+	background-color: #2ab866;
+	border-radius: 1.5em;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	background-color: #27ad60;
+}
+
+h1 {
+	color: #2ecc71;
+	font-size: 9em;
+	text-transform: uppercase;
+}

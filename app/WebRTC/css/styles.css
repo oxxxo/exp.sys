@@ -1,0 +1,205 @@
+@import "http://webfonts.ru/import/robotocondensed.css";
+
+* {
+	-moz-box-sizing: border-box;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: 0.5s;
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+
+html, body {
+	background-color: #070121;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 100%/1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header, footer, nav {
+	display: block;
+}
+
+header {
+	background-color: #03040C;
+	font-size: 1.125em;
+	height: 4.375em;
+}
+
+header nav ul {
+	overflow: hidden;
+}
+
+header nav ul li {
+	display: inline;
+	float: right;
+	font-weight: lighter;
+	line-height: 4.375em;
+	text-transform: uppercase;
+}
+
+header nav ul li:first-child {
+	float: left;
+	font-weight: normal;
+	text-transform: none;
+}
+
+header nav ul li a {
+	color: #FCFCFC;
+	margin: 0 1em;
+}
+
+header nav ul li a:hover {
+	opacity: 0.65;
+	text-decoration: none;
+}
+
+#logo {
+	display: inline;
+	font-size: 1.5em;
+}
+
+#connectbox {
+	background-color: #1C164E;
+	clear: both;
+	overflow: hidden;
+}
+
+#connectbox #input_group {
+	clear: both;
+	color: #FCFCFC;
+	font-size: 0.85em;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+#connectbox #input_group h2 {
+	font-size: 1.25em;
+	font-weight: lighter;
+}
+
+#connectbox input[type=text] {
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	display: block;
+	margin: 1.5em 0 0 0;
+	opacity: 0.75;
+	padding: 1em;
+	width: 100%;
+}
+
+#connectbox input[type=text]:hover {
+	opacity: 1;
+}
+
+#connectbox input[type=text]:focus {
+	opacity: 1;
+}
+
+input[type=file]{
+	border: 1px solid #060B68;
+	border-radius: 1.5em;
+	color: #2ecc71;
+	cursor: pointer;
+	display: inline-block;
+	margin: 2em 1em;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+input[type=file]:hover{
+	background-color: #0F158B;
+	color: #ffffff;
+}
+
+#connectbox input[type=submit] {
+	background-color: #060B68;
+	border-radius: 1.5em;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	padding: 1em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+button{
+	border: 1px solid #060B68;
+	border-radius: 1.5em;
+	background-color: #060B68;
+	color: #ffffff;
+	cursor: pointer;
+	max-width: 150px;
+	display: inline-block;
+	margin: 2em 1em;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+button:hover{
+	background-color: #0F158B;
+}
+
+#connectbox input[type=submit]:hover {
+	background-color: #0F158B;
+
+}
+
+#info .column h3 {
+	color: #2ecc71;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0.75em 0 0 0.75em;
+	text-align: center;
+}
+
+#info .column p {
+	color: #FCFCFC;
+	font-size: 1em;
+	margin: 0.625em 0.625em 1.25em 0.625em;
+}
+
+#sourcecode {
+	text-align: center;
+}
+
+#sourcecode p {
+	color: #ffffff;
+	margin: 2em 1em 0 1em;
+	opacity: 0.65;
+}
+
+#sourcecode a {
+	border: 1px solid #2ecc71;
+	border-radius: 1.5em;
+	color: #2ecc71;
+	cursor: pointer;
+	display: inline-block;
+	margin: 2em 1em;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#sourcecode a:hover {
+	background-color: #2ecc71;
+	color: #ffffff;
+}
