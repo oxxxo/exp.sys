@@ -26,17 +26,17 @@
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 0.2966312312601217,
+      "random": true,
       "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
+        "enable": true,
+        "speed": 5.76574820733955,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -54,13 +54,14 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
+      "speed": 1.603412060865523,
+      "direction": "bottom",
+      "random": true,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
+      "bounce": false,
       "attract": {
-        "enable": false,
+        "enable": true,
         "rotateX": 600,
         "rotateY": 1200
       }
@@ -94,7 +95,8 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -104,13 +106,5 @@
       }
     }
   },
-  "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#b61924",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }
+  "retina_detect": true
 }
