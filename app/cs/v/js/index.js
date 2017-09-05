@@ -7,7 +7,7 @@ var mXPlanes = [],
 
 var mTrails = [];
 
-var mPlaneSize = 300,
+var mPlaneSize = 150,
     mDivisions = 5,
     mSegmentSize = mPlaneSize / mDivisions;
 
