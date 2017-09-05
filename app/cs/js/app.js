@@ -1,5 +1,5 @@
 /* -----------------------------------------------
-/* dgfdggdgg/dfhdd/dgf
+/* dgfdggdgg/dfhdd/d
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
