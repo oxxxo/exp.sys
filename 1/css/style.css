@@ -1230,3 +1230,6 @@ body {
     transform: rotate(1turn);
   }
 }
+::-webkit-scrollbar {
+    width: 1px;
+}
