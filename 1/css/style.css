@@ -1,5 +1,6 @@
-body {
-  margin:0;}
+body {margin:0;background:url(https://developer.github.com/assets/images/hero-circuit-bg.svg)no-repeat;
+    background-size: contain;
+    overflow: hidden;}
 
 .container {
   /*background: #ffb02f;*/
