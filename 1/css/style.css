@@ -111,6 +111,7 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
   height: 8.85vw;
   background: white;
   border: 1.82vw solid black;
+  opacity:0;
 }
 .container .hour, .container .minute {
   will-change: transform;
