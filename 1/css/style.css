@@ -27,6 +27,10 @@ position:unset;
 .contrib-column.table-column {
     background: transparent;
 }
+.contrib-footer.clearfix.mt-1.mx-3.px-3.pb-1 {
+    background: transparent;
+    position: unset;
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 .container {
