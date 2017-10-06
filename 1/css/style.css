@@ -1,6 +1,7 @@
 body {margin:0;background:url(https://developer.github.com/assets/images/hero-circuit-bg.svg)no-repeat;
     background-size: contain;
     overflow: hidden;}
+/*---------------------------------------------------------------------------------------------------------------------*/
 .calendar{
 position:unset;
     background:transparent;
@@ -16,6 +17,10 @@ position:unset;
 .float-left.text-gray {
     background: transparent;
 }
+.contrib-legend.text-gray {
+    background: transparent;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
 
 .container {
   /*background: #ffb02f;*/
