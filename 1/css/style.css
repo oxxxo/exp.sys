@@ -3,7 +3,7 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
     overflow: hidden;}
 /*---------------------------------------------------------------------------------------------------------------------*/
 .calendar{
-position:unset;
+position:unset!important;
     background:transparent!important;
 }
 
