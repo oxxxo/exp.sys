@@ -141,14 +141,16 @@ h2.f4.text-normal.mb-2 {
   height: 3.13vw;
 }
 .container .clock {
-border-radius: 50%;
+    border-radius: 22%;
     left: 44.085vw;
     top: 8.25vw;
     width: 8.85vw;
     height: 8.85vw;
-    background: transparent;
-    border: 1.82vw solid white;
-    opacity: 0.8;
+    background: #e5e5e5;
+    border: 1.82vw solid rgb(229, 229, 229);
+    border-bottom: 1.82vw solid rgb(60, 65, 70);
+    border-top: 1.82vw solid rgb(60, 65, 70);
+    opacity: 0.5;
 }
 .container .hour, .container .minute {
   will-change: transform;
