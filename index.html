@@ -1,37 +1,69 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>CEPBEP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
-         <link rel="stylesheet" href="1/css/style.css">
-  <script type="text/javascript">;
-  !function(name,path,ctx){
-    var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
-  }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.1.3.min.js',this);
-  KeenAsync.ready(function(){
-    // Configure a client instance
-    // This is your actual Project ID and Write Key
-    var client = new KeenAsync({
-      projectId: '59363c0390b36501df8d3909',
-      writeKey: '6FD4CF428D9CBD2D65D74B05996B78972D2DF7379668ED8217C23EDAC82114F989CB96B6D44C95CDEBD32934C6FCB7C04C1ADE917BE6A2D331AFC9319AA6380EC9AF3DFBC2C257F65675CFA15788EFDD20C431BC00BF26B597C22AEE10076AD1'
-    });
-    // Record an event
-    client.recordEvent('pageviews', {
-      title: document.title
-    });
-  });
-</script>
-      <script type="text/javascript">
-        (function (e, t) {
+    <meta charset="UTF-8">
+    <title>CEPBEP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <link rel="stylesheet" href="1/css/style.css">
+    <script type="text/javascript">
+        ;
+        ! function(name, path, ctx) {
+            var latest, prev = name !== 'Keen' && window.Keen ? window.Keen : false;
+            ctx[name] = ctx[name] || {
+                ready: function(fn) {
+                    var h = document.getElementsByTagName('head')[0],
+                        s = document.createElement('script'),
+                        w = window,
+                        loaded;
+                    s.onload = s.onerror = s.onreadystatechange = function() {
+                        if ((s.readyState && !(/^c|loade/.test(s.readyState))) || loaded) {
+                            return
+                        }
+                        s.onload = s.onreadystatechange = null;
+                        loaded = 1;
+                        latest = w.Keen;
+                        if (prev) {
+                            w.Keen = prev
+                        } else {
+                            try {
+                                delete w.Keen
+                            } catch (e) {
+                                w.Keen = void 0
+                            }
+                        }
+                        ctx[name] = latest;
+                        ctx[name].ready(fn)
+                    };
+                    s.async = 1;
+                    s.src = path;
+                    h.parentNode.insertBefore(s, h)
+                }
+            }
+        }('KeenAsync', 'https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.1.3.min.js', this);
+        KeenAsync.ready(function() {
+            // Configure a client instance
+            // This is your actual Project ID and Write Key
+            var client = new KeenAsync({
+                projectId: '59363c0390b36501df8d3909',
+                writeKey: '6FD4CF428D9CBD2D65D74B05996B78972D2DF7379668ED8217C23EDAC82114F989CB96B6D44C95CDEBD32934C6FCB7C04C1ADE917BE6A2D331AFC9319AA6380EC9AF3DFBC2C257F65675CFA15788EFDD20C431BC00BF26B597C22AEE10076AD1'
+            });
+            // Record an event
+            client.recordEvent('pageviews', {
+                title: document.title
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function(e, t) {
             function r(e, t) {
-                e[t] = function () {
+                e[t] = function() {
                     e.push([t].concat(Array.prototype.slice.call(arguments, 0)));
                 };
             }
             var n = "JacoRecorder";
-            (function (e, t, i, s) {
+            (function(e, t, i, s) {
                 if (!i.__VERSION) {
                     e[n] = i;
                     var o = ["init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo"];
@@ -43,87 +75,94 @@
                     f.appendChild(a);
                 }
             })(e, t, e[n] || [], "https://recorder-assets.getjaco.com/recorder.js");
-        }).call(window, window, document), window.JacoRecorder.push(["init", "de125860-47b2-4e8e-a5b8-4af522df9268", {}]);  
+        }).call(window, window, document), window.JacoRecorder.push(["init", "de125860-47b2-4e8e-a5b8-4af522df9268", {}]);
     </script>
-  <style>.calendar{
-position:unset;
-    background:transparent;
-}
+</head>
 
-.js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full {
-    background: transparent;
-}
-
-.mb-5.border.border-gray-dark.rounded-1.py-2 {
-    background: transparent;
-}
-.float-left.text-gray {
-    background: transparent;
-}
-.contrib-legend.text-gray {
-    background: transparent;
-}</style>
-  </head>
-<body>  
-<div class="container">
- <center> <div class="calendar">
-    <!-- / -->
-   </div> </center>
-  <div class="lcd-light"></div>
-  <div class="monitor"></div>
-  <div class="monitor-neck"></div>
-  <div class="monitor-base"></div>
-  <div class="desk"></div>
-  <div class="tower"></div>
-  <div class="chair-back"></div>
-  <div class="chair-bottom"></div>
-  <div class="clock">
-    <div class="hour"></div>
-    <div class="minute"></div>
-  </div>
-  <div class="pillow"></div>
-  <div class="bed"></div>
-  <div class="human-wrapper">
-    <div class="human">
-      <div class="head">
-        <div class="eyes"></div>
-      </div>
-      <div class="torso">
-        <div class="l-thigh">
-          <div class="l-lower-leg"></div>
+<body>
+    <div class="container">
+        <center>
+            <div class="calendar">
+                <!-- / -->
+            </div>
+        </center>
+        <div class="lcd-light"></div>
+        <div class="monitor"></div>
+        <div class="monitor-neck"></div>
+        <div class="monitor-base"></div>
+        <div class="desk"></div>
+        <div class="tower"></div>
+        <div class="chair-back"></div>
+        <div class="chair-bottom"></div>
+        <div class="clock">
+            <div class="hour"></div>
+            <div class="minute"></div>
         </div>
-        <div class="r-thigh">
-          <div class="r-lower-leg"></div>
+        <div class="pillow"></div>
+        <div class="bed"></div>
+        <div class="human-wrapper">
+            <div class="human">
+                <div class="head">
+                    <div class="eyes"></div>
+                </div>
+                <div class="torso">
+                    <div class="l-thigh">
+                        <div class="l-lower-leg"></div>
+                    </div>
+                    <div class="r-thigh">
+                        <div class="r-lower-leg"></div>
+                    </div>
+                    <div class="r-upper-arm">
+                        <div class="r-lower-arm"></div>
+                    </div>
+                    <div class="l-upper-arm">
+                        <div class="l-lower-arm"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="r-upper-arm">
-          <div class="r-lower-arm"></div>
-        </div>
-        <div class="l-upper-arm">
-          <div class="l-lower-arm"></div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-     <script src="1/js/index.js"></script>
-      <script type="text/javascript">
-        setTimeout(function () {
+    <script src="1/js/index.js"></script>
+    <script type="text/javascript">
+        setTimeout(function() {
             if (window.sitecakeGlobals && sitecakeGlobals.editMode === false) {
                 document.getElementsByClassName("GIBFJXGDFG")[0].value = "admin";
             }
         }, 2000);
     </script>
 </body>
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-  <script>  GitHubCalendar(".calendar", "cepbep");</script>
+<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+<script src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+<script>
+    GitHubCalendar(".calendar", "cepbep");
+</script>
 </html>
-<!--
+
+<!-----------------------------------------------------------------------------
+
+///////////////////////////////////////////////////////////////////////////////
+
+                          КОНТАКТНАЯ ИНФОРМАЦИЯ:
+
+:|______________
+:|______________
+:|______________
+:|______________
+:|
 
 
+///////////////////////////////////////////////////////////////////////////////
+
+------------------------------------------------------------------------------->
+
+<!-----------------------------------------------------------------------------
+
+///////////////////////////////////////////////////////////////////////////////
               enigmatic-meadow-99471
               rrznq4hq
 
 
--->
+///////////////////////////////////////////////////////////////////////////////
+
+------------------------------------------------------------------------------->
 
