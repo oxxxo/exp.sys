@@ -21,6 +21,7 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
 }
 .contrib-legend.text-gray {
     background: transparent;
+        position: unset;
 }
 .contrib-column.contrib-column-first.table-column {
     background: transparent;
