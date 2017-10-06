@@ -9,6 +9,7 @@ position:unset;
 
 .js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full {
     background: transparent;
+        position: unset;
 }
 
 .mb-5.border.border-gray-dark.rounded-1.py-2 {
