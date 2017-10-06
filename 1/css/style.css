@@ -13,10 +13,10 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
 }
 
 .mb-5.border.border-gray-dark.rounded-1.py-2 {
-    background: transparent;
+    background: transparent;    position: unset;
 }
 .float-left.text-gray {
-    background: transparent;
+    background: transparent;    position: unset;
 }
 .contrib-legend.text-gray {
     background: transparent;
