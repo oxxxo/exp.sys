@@ -5,6 +5,16 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
 position:unset;
     background:transparent;
 }
+
+.js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full {
+    background: transparent;
+}
+
+.mb-5.border.border-gray-dark.rounded-1.py-2 {
+    background: transparent;
+}
+
+
 .container {
   /*background: #ffb02f;*/
   position: relative;
