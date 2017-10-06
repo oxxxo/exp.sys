@@ -20,6 +20,12 @@ position:unset;
 .contrib-legend.text-gray {
     background: transparent;
 }
+.contrib-column.contrib-column-first.table-column {
+    background: transparent;
+}
+.contrib-column.table-column {
+    background: transparent;
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 .container {
