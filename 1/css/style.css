@@ -4,7 +4,7 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
 /*---------------------------------------------------------------------------------------------------------------------*/
 .calendar{
 position:unset;
-    background:transparent;
+    background:transparent!important;
 }
 
 .js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full {
