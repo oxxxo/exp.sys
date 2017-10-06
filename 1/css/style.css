@@ -13,7 +13,9 @@ position:unset;
 .mb-5.border.border-gray-dark.rounded-1.py-2 {
     background: transparent;
 }
-
+.float-left.text-gray {
+    background: transparent;
+}
 
 .container {
   /*background: #ffb02f;*/
