@@ -185,15 +185,15 @@ h2.f4.text-normal.mb-2 {
   transform: rotate(-35deg);
 }
 .container .bed {
-  border-radius: 2.08vw 2.08vw 0.52vw 0.52vw;
-  left: 54.69vw;
-  top: 43.23vw;
-  width: 29.69vw;
-  height: 5.21vw;
-  background: transparent;
-  border-top: 3.13vw solid black;
-  border-right: 3.13vw solid black;
-  border-left: 3.13vw solid black;
+    border-radius: 2.08vw 2.08vw 0.52vw 0.52vw;
+    left: 54.69vw;
+    top: 43.23vw;
+    width: 29.69vw;
+    height: 5.21vw;
+    background: transparent;
+    border-top: 3.13vw solid #4078c0;
+    border-right: 3.13vw solid black;
+    border-left: 3.13vw solid black;
 }
 .container .human-wrapper {
   transform: translate(68.75vw, 23.44vw);
