@@ -6,23 +6,7 @@ body {
     text-align: center;
 }
 
-.hv
-{
-    color: transparent;
-    position: absolute;
-    bottom: 25px;
-    right: 306px;
 
-}
-.hv:hover
-{
-    color: #4078c0;
-    position: absolute;
-    bottom: 25px;
-    right: 306px;
-
-
-}
 
 
 
@@ -122,6 +106,21 @@ a {
     color: #FF4136;
     font-weight: 600;
     margin: 20px;
+}
+.hv
+{
+    color: transparent;
+    position: absolute;
+    bottom: 25px;
+    right: 306px;
+
+}
+.hv:hover
+{
+    color: #4078c0;
+    position: absolute;
+    bottom: 25px;
+    right: 306px;
 }
 ::-webkit-scrollbar {
     width: 1px;
