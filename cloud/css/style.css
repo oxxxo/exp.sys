@@ -1,7 +1,7 @@
 html,body { height: 100%; margin: 0px; padding: 0px; }
 
 body {
-    background-color: #ffffff;
+  /*  background-color: #ffffff;*/
     font-family: avenir, 'avenir next', helvetica, arial, sans-serif;
     text-align: center;
 }
