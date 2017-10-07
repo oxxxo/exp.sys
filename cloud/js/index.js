@@ -23,7 +23,7 @@ $(function(){
     });
 
     // on page load, start with a single song
-    iframe.src = "https://w.soundcloud.com/player/?url=https://soundcloud.com/withlovexavier/drake-medley";
+    iframe.src = "https://w.soundcloud.com/player/?url=https://soundcloud.com/mrsuicidesheep/dawn-pt2-an-ambient-mix";
     widget = SC.Widget(iframe);
 
     // keyboard shortcut bindings
