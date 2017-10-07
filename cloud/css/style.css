@@ -88,8 +88,13 @@ a {
 
 #widget {
     margin-top: 1em;
-    display:block;
-    border:0;
+    display: block;
+    border: 0;
+    height: 136px;
+    position: absolute;
+    left: 57px;
+    width: 285px;
+    top: 146px;
 }
 
 #error {
