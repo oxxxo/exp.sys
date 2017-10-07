@@ -48,7 +48,7 @@ h2.f4.text-normal.mb-2 {
   height: 56.25vw;
 }
 .container div {
-  background: black;
+  background: rgba(158, 158, 158, 0.28);
   position: absolute;
   transform-origin: 0 50%;
 }
