@@ -117,15 +117,15 @@ h2.f4.text-normal.mb-2 {
   height: 9.9vw;
 }
 .container .tower::before {
-  background-color: #ffb02f;
-  background-image: repeating-linear-gradient(transparent, transparent 0.52vw, black 0.52vw, black 1.04vw), repeating-linear-gradient(90deg, transparent, transparent 0.52vw, black 0.52vw, black 1.04vw);
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2.08vw;
-  right: 2.08vw;
-  width: 3.65vw;
-  height: 2.6vw;
+    background-color: #4078c0;
+    background-image: repeating-linear-gradient(transparent, transparent 0.52vw, #e4e4e4 0.52vw, #e4e4e4 1.04vw), repeating-linear-gradient(90deg, transparent, transparent 0.52vw, #f2f2f2 0.52vw, white 1.04vw);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2.08vw;
+    right: 2.08vw;
+    width: 3.65vw;
+    height: 2.6vw;
 }
 .container .chair-back {
   border-radius: 2.08vw;
