@@ -27,6 +27,7 @@ background: rgba(24, 89, 255, 0.26);
     position: unset;
     color: #fff;
     font-weight: 900;
+        border-radius: 20px;
 }
 .contrib-column.table-column {
     background: transparent;
