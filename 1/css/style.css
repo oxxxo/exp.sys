@@ -23,8 +23,10 @@ body {margin:0;background:url(https://developer.github.com/assets/images/hero-ci
         position: unset;
 }
 .contrib-column.contrib-column-first.table-column {
-    background: transparent;
-        position: unset;
+background: rgba(24, 89, 255, 0.26);
+    position: unset;
+    color: #fff;
+    font-weight: 900;
 }
 .contrib-column.table-column {
     background: transparent;
