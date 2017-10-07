@@ -70,9 +70,10 @@ a {
 }
 
 #searchterm {
-    width: 80%;
+    width: 100%;
+    margin-left: 13px;
     max-width: 400px;
-    height: 20px;
+    height: 30px;
     font-size: 18px;
     margin-top: 1px;
     border-radius: 8px;
@@ -81,9 +82,7 @@ a {
     background: rgba(0,0,0,.1);
     padding: 10px;
     outline: 0px;
-    box-shadow: 0 1px 0 rgba(255,255,255,.15), 
-                0 2px 4px rgba(0,0,0,.2) inset, 
-                0 0 12px rgba(255,255,255,.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,.15), 0 2px 4px rgba(0,0,0,.2) inset, 0 0 12px rgba(255,255,255,.1);
 }
 
 #widget {
